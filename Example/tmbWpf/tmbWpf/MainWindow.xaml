@@ -1,0 +1,27 @@
+﻿<Window x:Class="mbWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mbWpf"
+        mc:Ignorable="d"
+        Title="TheMessageBus WPF-Sample" Height="350" Width="525" Icon="tmbWpf.ico">
+    <Grid>
+        <StackPanel>
+            <TextBox Name="txtService" Text="7701" />
+            <TextBox Name="txtNetwork" Text="224.3.0.5" />
+            <TextBox Name="txtDaemon" Text="" />
+
+            <Button Content="Start" Click="Button_ClickStart" />
+            <Button Content="Stop" Click="Button_ClickStop" />
+
+            <TextBox Name="txtSubject" Text="MySubject" />
+            <Button Content="Add" Click="Button_ClickSubjectAdd" />
+            <Button Content="Remove" Click="Button_ClickSubjectRemove" />
+
+            <TextBox Name="txtData" Text="Data" />
+            <Button Content="Send" Click="Button_ClickSend" />
+            <Button Content="SendRequest" Click="Button_ClickSendRequest" />
+        </StackPanel>
+    </Grid>
+</Window>

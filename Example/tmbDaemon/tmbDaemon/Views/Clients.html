@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>mik Message Bus</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>MachineName</th>
+            <th>UserName</th>
+            <th>Application</th>
+            <th>Version</th>
+            <th>Subscriptions</th>
+            <th>Id</th>
+        </tr>
+
+        @Each.Clients
+
+        <tr>
+            <td>@Current.ApplicationInfo.MachineName</td>
+            <td>@Current.ApplicationInfo.UserName</td>
+            <td>@Current.ApplicationInfo.Application</td>
+            <td>@Current.ApplicationInfo.Version</td>
+            <td>@Current.Transports.Count</td>
+            <td><a href="ClientDetail/@Current.ApplicationInfo.ClientId">@Current.ApplicationInfo.ClientId</a></td>
+        </tr>
+
+        @EndEach
+    </table>
+</body>
+</html>

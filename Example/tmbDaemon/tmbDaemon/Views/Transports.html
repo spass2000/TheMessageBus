@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>mik Message Bus</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Service</th>
+            <th>Multicast</th>
+            <th>Count</th>
+        </tr>
+
+        @Each.Transports
+
+        <tr>
+            <td><a href="TransportDetail/@Current.Service">@Current.ServicePort</a></td>
+            <td>@Current.MulticastIp</td>
+            <td>@Current.Clients.Count</td>
+        </tr>
+
+        @EndEach
+    </table>
+</body>
+</html>

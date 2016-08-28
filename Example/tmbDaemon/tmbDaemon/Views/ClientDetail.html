@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>ClientId</td>
+            <td>@Model.ApplicationInfo.ClientId</td>
+        </tr>
+        <tr>
+            <td>DateTime</td>
+            <td>@Model.ApplicationInfo.DateTime</td>
+        </tr>
+        <tr>
+            <td>MachineName</td>
+            <td>@Model.ApplicationInfo.MachineName</td>
+        </tr>
+        <tr>
+            <td>UserName</td>
+            <td>@Model.ApplicationInfo.UserName</td>
+        </tr>
+        <tr>
+            <td>UserDomainName</td>
+            <td>@Model.ApplicationInfo.UserDomainName</td>
+        </tr>
+        <tr>
+            <td>Application</td>
+            <td>@Model.ApplicationInfo.Application</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>@Model.ApplicationInfo.Version</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+        </tr>
+
+        @Each.GetSubscriptions
+
+        <tr>
+            <td>@Current</td>
+        </tr>
+
+        @EndEach
+    </table>
+</body>
+</html>

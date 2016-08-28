@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tmbTimerClient", "tmbTimerClient\tmbTimerClient.csproj", "{0E86085C-F60B-4016-8770-3DE6CB0CDFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "..\Messages\Messages.csproj", "{4BF44704-1935-40B4-A18D-70145A0120C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMessageBus", "..\..\..\TheMessageBus\TheMessageBus.csproj", "{6ED91A2F-0BB1-48A0-BF71-1291E67DDA2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E86085C-F60B-4016-8770-3DE6CB0CDFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E86085C-F60B-4016-8770-3DE6CB0CDFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E86085C-F60B-4016-8770-3DE6CB0CDFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E86085C-F60B-4016-8770-3DE6CB0CDFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF44704-1935-40B4-A18D-70145A0120C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF44704-1935-40B4-A18D-70145A0120C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF44704-1935-40B4-A18D-70145A0120C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF44704-1935-40B4-A18D-70145A0120C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED91A2F-0BB1-48A0-BF71-1291E67DDA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED91A2F-0BB1-48A0-BF71-1291E67DDA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED91A2F-0BB1-48A0-BF71-1291E67DDA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED91A2F-0BB1-48A0-BF71-1291E67DDA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
